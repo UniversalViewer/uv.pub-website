@@ -1,88 +1,54 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+import Head from "../components/head";
+import { Component } from "react";
+import YouTube from "../components/youtube";
+import GithubRibbon from "../components/github-ribbon";
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel='icon' href='/favicon.ico' />
-    </Head>
+export default class Home extends Component {
 
-    <Nav />
+  constructor(props) {
+    super(props);
+    this.state = {
+      title:
+        "UV.pub",
+      repo: "UniversalViewer/uv.pub",
+      strapline:
+        "✨ File Storage and Sharing for Everyone ✨",
+      video: "https://www.youtube.com/embed/e_PXtXKiz68"
+    }
+  }
 
-    <div className='hero'>
-      <h1 className='title'>Hello, world!</h1>
-      <p className='description'>
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+  render() {
+    return (
+      <>
+        <Head title={ this.state.title }></Head>
 
-      <div className='row'>
-        <a href='https://nextjs.org/docs' className='card'>
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href='https://nextjs.org/learn' className='card'>
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href='https://github.com/zeit/next.js/tree/master/examples'
-          className='card'
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
-      </div>
-    </div>
+        <GithubRibbon repo={ this.state.repo } />
 
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
+        <header className={"mw5 mw7-ns center pa3 ph5-ns"}>
+          <h1 className={"tc"}>{ this.state.title }</h1>
+          <p className={"tc pa3"}>{ this.state.strapline }</p>
 
-export default Home
+          <div>
+            <YouTube video={ this.state.video }></YouTube>
+          </div>
+        </header>
+
+        <main className={"mw5 mw7-ns center pa3 ph5-ns"}>
+          UV.pub is a desktop tool for publishing <a href="https://iiif.io/api/presentation/3.0/">IIIF</a> by dragging and dropping files/folders.
+          
+          It uses <a href="http://github.com/edsilv/biiif">biiif</a> to read your files/folders and adds them to a peer-to-peer <a href="https://dat.foundation">dat</a> archive.
+
+          This archive can then be used to serve the files from your local machine to <a href="https://beakerbrowser.com">Beaker Browser</a> (a browser that understands the Dat protocol).
+
+          Tools like <a href="https://github.com/pfrazee/dat-gateway">Dat Gateway</a> or <a href="https://gitlab.com/mnemoscene/fusebot">FuseBot</a> (a Slack chat bot) can be used to preserve your Dat archive on a remote "preservation peer", and serve its contents over regular http.
+        </main>
+
+        <footer className={"mw5 mw7-ns center pa3 ph5-ns"}>
+
+        </footer>
+
+      </>
+    );
+  }
+}
