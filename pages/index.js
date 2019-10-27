@@ -13,7 +13,7 @@ export default class Home extends Component {
         "UV.pub",
       repo: "UniversalViewer/uv.pub",
       strapline:
-        "✨ File Storage and Sharing for Everyone ✨",
+        "What if you didn't need a separate account for every type of content you want to share?",
       video: "https://www.youtube.com/embed/e_PXtXKiz68"
     }
   }
@@ -27,7 +27,7 @@ export default class Home extends Component {
 
         <header className={"mw5 mw7-ns center pa3 ph5-ns"}>
           <h1 className={"tc"}>{ this.state.title }</h1>
-          <p className={"tc pa3"}>{ this.state.strapline }</p>
+          <h3 className={"tc pa3"}>{ this.state.strapline }</h3>
 
           <div>
             <YouTube video={ this.state.video }></YouTube>
@@ -45,7 +45,7 @@ export default class Home extends Component {
         </main>
 
         <footer className={"mw5 mw7-ns center pa3 ph5-ns"}>
-
+          <a href="http://universalviewer.io/#contact">Contact</a>
         </footer>
 
       </>
