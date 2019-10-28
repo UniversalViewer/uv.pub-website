@@ -4,16 +4,15 @@ import NextHead from "next/head";
 const defaultDescription = "UV.pub";
 const defaultOGURL = "https://uv.pub";
 const defaultOGImage = "https://uv.pub/static/img/uvpub-og.jpg";
-const gaid = "";
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    {gaid && (
+    {props.gaid && (
       <>
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${gaid}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${props.gaid}`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -21,7 +20,7 @@ const Head = props => (
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${gaid}');
+                gtag('config', '${props.gaid}');
                 `
           }}
         />
