@@ -33,7 +33,7 @@ export default class Home extends Component {
           This archive can then be used to serve the files from your local machine to <a href='https://beakerbrowser.com'>Beaker Browser</a> (a browser that understands the dat protocol).\
         </p>\
         <p>\
-          Tools like <a href='https://github.com/pfrazee/dat-gateway'>Dat Gateway</a> or <a href='https://gitlab.com/mnemoscene/fusebot'>FuseBot</a> (a Slack chat bot) can be used to store that dat archive on your own server, and make its contents available over regular http (no special browsers or browser plugins required!).\
+          Tools like <a href='https://github.com/pfrazee/dat-gateway'>Dat Gateway</a> or <a href='https://gitlab.com/mnemoscene/fusebot'>FuseBot</a> (a Slack chat bot) can be used to store that dat archive on your own server, and make its contents available over regular http (no special browsers or browser plugins required!)\
         </p>\
         <p>\
           Because it uses dat, you can safely store many copies of your data without worrying about them getting out of sync. Set up your own Universal Viewer instance anywhere you like to view the contents of your archive!\
