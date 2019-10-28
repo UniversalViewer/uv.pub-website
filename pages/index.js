@@ -27,7 +27,7 @@ export default class Home extends Component {
       howdoesitwork: {
         title: "🤓 How does it work?",
         text: "<p>\
-          UV.pub uses <a href='http://github.com/edsilv/biiif'>biiif</a> to read your files/folders, converts them to the <a href='https://iiif.io/api/presentation/3.0/'>IIIF</a> format, then adds them to a peer-to-peer <a href='https://dat.foundation'>dat</a> archive.\
+          <a href='http://github.com/UniversalViewer/uv.pub'>UV.pub</a> uses <a href='http://github.com/edsilv/biiif'>biiif</a> to read your files/folders, converts them to the <a href='https://iiif.io/api/presentation/3.0/'>IIIF</a> format, then adds them to a peer-to-peer <a href='https://dat.foundation'>dat</a> archive.\
         </p>\
         <p>\
           This archive can then be used to serve the files from your local machine to <a href='https://beakerbrowser.com'>Beaker Browser</a> (a browser that understands the dat protocol).\
