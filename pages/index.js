@@ -18,7 +18,7 @@ export default class Home extends Component {
           What if it were possible to publish and share your images, videos, sounds, pdfs, and 3D objects without having to use a separate website to view each content type?\
         </p>\
         <p>\
-          UV.pub (part of the <a href='http://universalviewer.io'>Universal Viewer</a> project) is a drag-and-drop desktop tool for just this!\
+          <a href='http://github.com/UniversalViewer/uv.pub'>UV.pub</a> (part of the <a href='http://universalviewer.io'>Universal Viewer</a> project) is a drag-and-drop desktop tool for just this!\
         </p>\
         <p>\
           Built on open source and <a href='https://iiif.io/api/presentation/3.0/'>standardised</a> technologies developed by the Galleries, Libraries, Archives, and Museums (GLAM) sector, UV.pub frees you from vendor lock-in and proprietary formats.\
