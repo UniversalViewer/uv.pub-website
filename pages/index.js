@@ -32,7 +32,7 @@ export default class Home extends Component {
         </header>
 
         <main className={"mw5 mw7-ns center pa3 ph5-ns"}>
-          <h3>What is it?</h3>
+          <h3>🙋 What is it?</h3>
           <p>
             What if it were possible to publish and share your images, videos, sounds, pdfs, and 3D objects without having to use a separate website to view each type of content?
           </p>
@@ -42,7 +42,7 @@ export default class Home extends Component {
           <p>
             Built on open source and <a href="https://iiif.io/api/presentation/3.0/">standardised</a> technologies developed by the Galleries, Libraries, Archives, and Museums (GLAM) sector, UV.pub frees you from vendor lock-in and proprietary formats.
           </p>
-          <h3>How does it work?</h3>
+          <h3>🤓 How does it work?</h3>
           <p>
             UV.pub uses <a href="http://github.com/edsilv/biiif">biiif</a> to read your files/folders, converts them to the <a href="https://iiif.io/api/presentation/3.0/">IIIF</a> format, then adds them to a peer-to-peer <a href="https://dat.foundation">dat</a> archive.
           </p>
