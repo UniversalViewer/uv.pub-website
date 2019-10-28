@@ -22,7 +22,7 @@ export default class Home extends Component {
 
         <GithubRibbon repo={this.state.repo} />
 
-        <header className={"mw5 mw7-ns center pa3 ph5-ns"}>
+        <header className={"mw7 mw8-ns center pa3 ph5-ns"}>
           <h1 className={"tc"}>{this.state.title}</h1>
           <h2 className={"tc pa3"}>{this.state.strapline}</h2>
 
@@ -31,7 +31,7 @@ export default class Home extends Component {
           </div>
         </header>
 
-        <main className={"mw5 mw7-ns center pa3 ph5-ns"}>
+        <main className={"mw7 mw8-ns center pa3 ph5-ns"}>
           <h3>🙋 What is it?</h3>
           <p>
             What if it were possible to publish and share your images, videos, sounds, pdfs, and 3D objects without having to use a separate website to view each type of content?
@@ -57,7 +57,7 @@ export default class Home extends Component {
           </p>
         </main>
 
-        <footer className={"mw5 mw7-ns center pa3 ph5-ns"}>
+        <footer className={"mw7 mw8-ns center pa3 ph5-ns"}>
           <p>
             <a href="https://twitter.com/universalviewer">
             📞 Contact us to find out more!
