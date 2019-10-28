@@ -15,7 +15,7 @@ export default class Home extends Component {
       whatisit: {
         title: "🙋 What is it?",
         text: "<p>\
-          What if it were possible to publish and share your images, videos, sounds, pdfs, and 3D objects without having to use a separate website to view each type of content?\
+          What if it were possible to publish and share your images, videos, sounds, pdfs, and 3D objects without having to use a separate website to view each content type?\
         </p>\
         <p>\
           UV.pub (part of the <a href='http://universalviewer.io'>Universal Viewer</a> project) is a drag-and-drop desktop tool for just this!\
